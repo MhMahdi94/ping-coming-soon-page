@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+html{
+    display: flex;
+    justify-content: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+h1 span{
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+.heading p{
+    margin-top: -10px;
+    color: hsl(209, 33%, 12%);
+}
+
+form{
+    display: flex;
+}
+
+form input{
+    width: 350px;
+    margin-right: 10px;
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 15px;
+    border-radius: 40px;
+    height: 20px;
+}
+
+form input:focus {
+    border: 2px solid hsl(223, 87%, 63%);
+  }
+
+form button{
+    border: none;
+    text-decoration: none;
+    background-color:  hsl(223, 87%, 63%);
+    width:130px;
+    cursor: pointer;
+    text-align: center;
+    /* height: 100px; */
+    padding: 15px 32px;
+    color: white;
+    border-radius: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#error{
+    color: hsl(354, 100%, 66%);
+    font-size: 14px;
+    font-weight: 300;
+    width: fit-content;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.img-container{
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.img-container img{
+    width: 600px;
+}
+
+footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons i{
+    width: 50px;
+    height: 50px;
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.copyright{
+    color: hsl(0, 0%, 59%);
+}
+
+@media only screen and (max-width: 768px) {
+   
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form button{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+}
